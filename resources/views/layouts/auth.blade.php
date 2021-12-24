@@ -15,7 +15,7 @@
         <div class="col-lg-4 col-md-6 col-12 order-lg-1 min-vh-100 order-2 bg-white">
           <div class="p-4 m-3">
             <img src="{{ asset('img/stisla-fill.svg') }}" alt="logo" width="80" class="shadow-light rounded-circle mb-5 mt-2">
-            <h4 class="text-dark font-weight-normal">Welcome to <span class="font-weight-bold">Bening App Managements</span></h4>
+            <h4 class="text-dark font-weight-normal">Welcome to <span class="font-weight-bold">BenetSystem</span></h4>
             @if(session()->has('info'))
             <div class="alert alert-primary">
                 {{ session()->get('info') }}
@@ -28,7 +28,7 @@
             @endif
             @yield('content')
             <div class="text-center mt-5 text-small">
-              Copyright &copy; PT. SMB Kencana. <br> Made with 💙 by Stisla | Maintained by Fallah
+              Copyright &copy; PT. SMB Kencana. <br> Made with 💙 by Stisla | Maintained by Fallah Andy Prakasa
               <div class="mt-2">
                 <a href="#">Privacy Policy</a>
                 <div class="bullet"></div>
