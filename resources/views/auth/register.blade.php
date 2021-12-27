@@ -1,5 +1,4 @@
 @extends('layouts.auth')
-
 @section('content')
 <p class="text-muted">Register account.</p>
 <form method="POST" action="{{ route('register') }}" class="needs-validation" novalidate="">
