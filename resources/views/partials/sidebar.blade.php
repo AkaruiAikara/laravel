@@ -12,6 +12,7 @@
     <li class="{{ request()->is('table') ? 'active' : '' }}"><a href="{{ url('table') }}"><i class="fas fa-table"></i> <span>Tables</span></a></li>
     <li class="menu-header">Users</li>
     <li class="{{ request()->is('users') ? 'active' : '' }}"><a class="nav-link" href="{{ url('users') }}"><i class="fas fa-users"></i> <span>Users</span></a></li>
+    <li class="{{ request()->is('pelanggan') ? 'active' : '' }}"><a class="nav-link" href="{{ url('pelanggan') }}"><i class="fas fa-users"></i> <span>Pelanggan</span></a></li>
   </ul>
   @else
   <div class="card">

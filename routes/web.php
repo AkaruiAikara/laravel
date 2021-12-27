@@ -1,12 +1,13 @@
 <?php
 
-use Illuminate\Foundation\Auth\EmailVerificationRequest;
-
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Route;
 
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\PelangganController;
+use Illuminate\Foundation\Auth\EmailVerificationRequest;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +28,7 @@ Auth::routes(['verify' => true]);
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+Route::get('/pelanggan', [PelangganController::class, 'index'])->name('pelanggan');
 
 Route::get('/email/verify', function () {
     return view('auth.verify');
